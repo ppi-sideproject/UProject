@@ -1,48 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UProject</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 40px;
-        background-color: #f4f4f4;
-        color: #333;
-    }
-    h1 {
-        color: #007BFF;
-    }
-    .box {
-        width: 200px;
-        height: 100px;
-        background-color: #007BFF;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-        border-radius: 8px;
-    }
-    .navbar a {
-        text-decoration: none;
-        color: #007BFF;
-        margin: 0 10px;
-    }
-</style>
-<body>
-    <nav class="navbar">
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
-    <h1>Welcome to UProject</h1>
-    <p>This is the main page of UProject.</p>
 
-    <div class="box">this is the box</div>
+<body class="bg-gray-100">
 
+  <!-- NAVBAR -->
+  <nav class="flex justify-between items-center p-5 bg-white shadow">
+    <h1 class="text-2xl font-extrabold text-blue-600">BRABO</h1>
+    <ul class="flex space-x-6">
+      <li class="cursor-pointer font-bold hover:text-blue-600">Home</li>
+      <li class="cursor-pointer font-bold hover:text-blue-600">Services</li>
+      <li class="cursor-pointer font-bold hover:text-blue-600">Contact</li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="flex flex-col lg:flex-row items-center justify-center px-10 py-20">
+    <div class="lg:w-1/2 p-5">
+      <h1 class="text-4xl lg:text-6xl font-bold text-gray-800">
+        Build Amazing Websites with Vishal Sharma
+      </h1>
+      <p class="text-gray-600 mt-4">
+        we helps you design modern, responsive websites faster than ever.
+      </p>
+      <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-800 cursor-pointer">
+        Get Started
+      </button>
+    </div>
+
+    <div class="lg:w-1/2 p-5">
+      <img
+        class="rounded shadow-lg"
+        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+        alt="hero"
+      />
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="py-16 bg-white">
+    <h2 class="text-center text-3xl font-bold text-gray-800">Why Choose Us?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 px-10">
+      
+      <div class="bg-gray-300  rounded shadow hover:shadow-lg cursor-pointer ">
+        <h3 class="text-2xl font-bold mt-3 mb-2 text-center">Fast Development</h3>
+        <p class="text-gray-600 text-xl  text-center">We helps you build UI faster with ready utilities.</p>
+        <div class="w- bg-blue-800">
+            <img class="w-full mt-4" src="https://tse1.mm.bing.net/th/id/OIP.3JbmwFLFDyee085jD_kXiwHaEK?pid=Api&P=0&h=180" alt="">
+        </div>
+      </div>
+
+      <div class=" bg-gray-300 p-6 rounded shadow hover:shadow-lg cursor-pointer">
+        <h3 class="text-2xl font-bold mt-3 mb-2 text-center">Responsive Design</h3>
+        <p class="text-gray-600 text-xl  text-center">Works smoothly on mobile, tablet, and desktop.</p>
+          <div class="w-full">
+            <img class="w-full " src="https://tse1.mm.bing.net/th/id/OIP.RIBrSI6jO-t_d-fMaxsfHwHaE7?pid=Api&P=0&h=180" alt="">
+        </div>
+      </div>
+
+      <div class="bg-gray-300 p-6 rounded shadow hover:shadow-lg cursor-pointer border-red-500">
+        <h3 class="text-2xl font-bold mt-3 mb-2 text-center">Highly Customizable</h3>
+        <p class="text-gray-600 text-xl  text-center">No predefined themes. You create your own design.</p>
+          <div class="w-full bg-blue-800">
+            <img class="w-full " src="https://tse3.mm.bing.net/th/id/OIP.rlOiirrcpdSZEZ8nLlt6JgHaGC?pid=Api&P=0&h=180" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white text-center p-5 mt-10">
+    © 2025 Brabo. All rights reserved.
+  </footer>
 
 </body>
 </html>
